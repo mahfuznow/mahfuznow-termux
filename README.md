@@ -46,6 +46,8 @@ cp mahfuznow-termux/settings/font.ttf ~/.termux/ \
 && \
 termux-reload-settings \
 && \
+chmod +x mahfuznow-termux/oh-my-fish/bin/install \
+&& \
 ./mahfuznow-termux/oh-my-fish/bin/install --offline
 ```
 
