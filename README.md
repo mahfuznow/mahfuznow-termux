@@ -46,7 +46,7 @@ cp mahfuznow-termux/settings/font.ttf ~/.termux/ \
 && \
 termux-reload-settings \
 && \
-.mahfuznow-termux/oh-my-fish/bin/install --offline
+./mahfuznow-termux/oh-my-fish/bin/install --offline
 ```
 
 Then copy the following command and run:
