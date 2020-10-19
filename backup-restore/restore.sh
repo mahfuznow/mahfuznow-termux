@@ -6,7 +6,7 @@ rm -rf home &&\
 tar -zxvf /sdcard/termux-backup.tar.gz home &&\
 echo "======== Restoring usr =========" &&\
 cp  home/mahfuznow-termux/backup-restore/busybox ./busybox-tar && \
-chmod +x tar && \
+chmod +x busybox-tar && \
 rm -rf usr &&\
 unset LD_PRELOAD &&\
 ./busybox-tar -zxvf /sdcard/termux-backup.tar.gz usr &&\
