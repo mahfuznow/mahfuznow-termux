@@ -1,3 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/bash
 termux-setup-storage &&\
 echo "======== Restoring home =========" &&\
 cd ~/.. &&\
