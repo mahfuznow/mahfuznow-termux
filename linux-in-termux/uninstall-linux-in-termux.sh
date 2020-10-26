@@ -7,36 +7,28 @@ echo ""
   echo ""
 echo ""
 
-echo "==== Choose Uninstallation Option ===="
+echo "==== Choose Installation Option ===="
   distro=""
-  echo "  1) Alpine"
-  echo "  2) Debian"
-  echo "  3) Fedora"
-  echo "  4) Kali"
-  echo "  5) Manjaro"
-  echo "  6) Parrot"
-  echo "  7) Ubuntu"
-  echo "  8) Ubuntu19"
-  echo "  9) Ubuntu20"
-  echo "  10) Void"
+  echo "  1) Kali"
+  echo "  2) Ubuntu"
+  echo "  3) Debian"
+  echo "  4) Parrot"
+  echo "  5) Fedora"
+  echo "  6) Void"
   read o
   case $o in
-    1) distro="Alpine";;
-    2) distro="Debian";;
-    3) distro="Fedora";;
-    4) distro="Kali";;
-    5) distro="Manjaro";;
-    6) distro="Parrot";;
-    7) distro="Ubuntu";;
-    8) distro="Ubuntu19";;
-    9) distro="Ubuntu20";;
-    10) distro="Void";;
+    1) distro="Kali";;
+    2) distro="Ubuntu";;
+    3) distro="Debian";;
+    4) distro="Parrot";;
+    5) distro="Fedora";;
+    6) distro="Void";;
     *) echo "invalid option";exit;
   esac
   echo "《$distro selected》"
 
-  installation_dir="$HOME/$distro"
-  termux_bin="/data/data/com.termux/files/usr/bin/start-${distro,,}"
+installation_dir="$HOME/$distro"
+termux_bin="/data/data/com.termux/files/usr/bin/start-${distro,,}"
 
   if [ -d "$installation_dir" ]; then
         echo "==== Are you sure to delete 《$installation_dir》folder? ===="
